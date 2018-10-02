@@ -1,22 +1,21 @@
 *{
 	box-sizing: border-box;
 	font-family: arial;
-	font-size: 1em;
+	font-size: 15px;
 }
 
 body{
-	background-image: url("../img/background1.jpg");
+	background-image: url("background1.jpg");
 	background-size: cover;
-	position: sticky;
 }
 /*CSS for hoveddelen av siden. Satt til bredde 80% så bakgrunnsbildet synes. */
 #mainContainer {
 	max-width: 80%;
-	margin: 0 auto;
+	margin: auto;
 	display: grid;
 	grid-gap: 0px;
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-	grid-template-rows: 2fr 8fr 40px;
+	grid-template-rows: 350px 1fr 40px;
 	grid-template-areas:
 		"header header header header header"
 		"mainArt mainArt mainArt sidebar sidebar"
@@ -34,7 +33,7 @@ body{
 	"nav nav nav";
 	grid-area: header;
 	color: white;
-	background-image: url("../img/header.jpg");
+	background-image: url("header.jpg");
 	background-size: cover;
 	border-radius: 5px;
 	margin-top: 20px;
@@ -56,12 +55,12 @@ body{
 	grid-area: nav;
 	align-self: center;
 	justify-self: center;
-	margin-bottom: 10px;
 	
 }
 
 /*Styling på nav-linkene slik at de ser ut som knapper.*/
 #mainHead nav a {
+
 	color: white;
 	text-decoration: none;
 	padding: 5px;
@@ -88,25 +87,43 @@ body{
 
 /*Spesifikasjoner for hvordan hver enkelt artikkel skal se ut*/
 #mainArea .artikkel {
-	height: 200px;
+	max-height: 250px;
+	margin-left: 40px;
+	margin-bottom: 50px;
 	width: 100%;
 	display: flex;
-	flex-direction: row;
-	border-top: 5px;
+	flex-direction: column;
+	
 	
 }
 
-#mainArea .artikkel .divArt {
-	margin-left: 20px;
+#mainArea article div {
+	padding-left: 20px;
+	heigth: auto;
+	
 }
 
 #mainArea article h2 {
-	border-bottom: 1px solid black;
+	
 
 }
 
 #mainArea article p {
 	max-width: 80%;
+}
+
+#mainArea article a {
+	margin-top: 20px;
+	color: black;
+	text-decoration: none;
+	padding: 5px;
+	border: 1px solid black;
+}
+
+#mainArea article a:hover {
+	color: white;
+	border: 1px solid white;
+	background-color: gray;
 }
 
 
@@ -128,14 +145,11 @@ body{
 	margin-left: 5px;
 }
 
-#youtube {
-	padding: 5px;
-	grid-area: video;
-}
+
 /*Styling for footerdelen.*/
 footer {
 	grid-area: footer;
-	justify-self: center;
+	text-align: center;
 	color: white;
 	padding-top: 5px;
 }
@@ -153,6 +167,12 @@ footer {
 	max-width: 100%
 	
 }
+
+#youtube {
+	padding: 5px;
+	grid-area: video;
+	text-align: center;
+}
 #responsiveLink nav {
 	padding-top: 30px;
 	display: flex;
@@ -161,6 +181,7 @@ footer {
 	align-items: center;
 	justify-items: center;
 	width: 100%;
+	padding-top: 50px;
 }
 
 #responsiveLink nav a {
@@ -171,24 +192,34 @@ footer {
 	font-size: 18px;
 	width: 100%;
 	text-align: center;
+	text-decoration: none;
 	
 }
 
 #responsiveLink nav a:hover {
 	color: white;
 	border: 1px solid white;
-	background-color: lightgray;
+	background-color: gray;
 }
 
 #gitKnapp {
 	padding-top: 50px;
 	bottom: 10;
+	grid-areas: button;
 }
 
 #gitKnapp a{
 	color: black;
 	border: 1px solid black;
-	padding: 10px 15% 10px 15%;
+	padding: 10px 48% 10px 48%;
 	font-size: 18px;
 	text-align: center;
+	text-decoration: none;
+}
+
+#gitKnapp a:hover {
+	color: white;
+	border: 1px solid white;
+	background-color: gray;
+	
 }
