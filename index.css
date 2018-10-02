@@ -1,0 +1,194 @@
+*{
+	box-sizing: border-box;
+	font-family: arial;
+	font-size: 1em;
+}
+
+body{
+	background-image: url("background1.jpg");
+	background-size: cover;
+	position: sticky;
+}
+/*CSS for hoveddelen av siden. Satt til bredde 80% så bakgrunnsbildet synes. */
+#mainContainer {
+	max-width: 80%;
+	margin: 0 auto;
+	display: grid;
+	grid-gap: 0px;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	grid-template-rows: 2fr 8fr 40px;
+	grid-template-areas:
+		"header header header header header"
+		"mainArt mainArt mainArt sidebar sidebar"
+		"footer footer footer footer footer";
+	
+}
+
+/*Definerer boksen til header og nav*/
+#mainHead {
+	display: grid;
+	grid-template-columns:1fr 2fr 1fr;
+	grid-template-rows: 2fr 1fr;
+	grid-template-areas:
+	"header header header"
+	"nav nav nav";
+	grid-area: header;
+	color: white;
+	background-image: url("header.jpg");
+	background-size: cover;
+	border-radius: 5px;
+	margin-top: 20px;
+	margin-bottom: 10px;
+
+}
+
+/*Spesifikasjoner for overskriften i headerelementet*/
+#mainHead h1 {
+	grid-area: header;
+	align-self: center;
+	justify-self: center;
+	font-size: 3rem;
+	
+}
+
+/*Posisjonerer nav-delen i headerelementet*/
+#mainHead nav {
+	grid-area: nav;
+	align-self: center;
+	justify-self: center;
+	margin-bottom: 10px;
+	
+}
+
+/*Styling på nav-linkene slik at de ser ut som knapper.*/
+#mainHead nav a {
+	color: white;
+	text-decoration: none;
+	padding: 5px;
+	border: 1px solid white;
+}
+
+/*Spesifikasjoner for hva som skjer når man hovrer linkene.*/
+#mainHead nav a:hover {
+	background-color: white;
+	color: black;
+}
+
+/*Hoveddelen som skal fylles med artikler gjennom semesteret.*/
+#mainArea {
+	display: flex;
+	flex-direction: column;
+	grid-area: mainArt;
+	background-color: #fcfcfc;
+	border: 1px solid #222222;
+	border-radius: 5px;
+	padding: 5%;
+
+}
+
+/*Spesifikasjoner for hvordan hver enkelt artikkel skal se ut*/
+#mainArea .artikkel {
+	height: 200px;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	border-top: 5px;
+	
+}
+
+#mainArea .artikkel .divArt {
+	margin-left: 20px;
+}
+
+#mainArea article h2 {
+	border-bottom: 1px solid black;
+
+}
+
+#mainArea article p {
+	max-width: 80%;
+}
+
+
+
+
+/*Spesifikasjoner for sidebaren, som skal fylles med 3 seksjoner.*/
+#sidebar {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+	grid-template-areas: "video"
+	"linker"
+	"button";
+	grid-area: sidebar;
+	background-color: #fcfcfc;
+	border: 1px solid #222222;
+	border-radius: 5px;
+	padding: 5%;
+	margin-left: 5px;
+}
+
+#youtube {
+	padding: 5px;
+	grid-area: video;
+}
+/*Styling for footerdelen.*/
+footer {
+	grid-area: footer;
+	justify-self: center;
+	color: white;
+	padding-top: 5px;
+}
+
+/*Angir hvordan artikkelbildene skal se ut.*/
+.artikkelImg {
+
+	height: 175px;
+	width: 175px;
+	border-radius: 50%;
+	border: 1px solid #cfcfcf;
+}
+
+#sidebar section {
+	max-width: 100%
+	
+}
+#responsiveLink nav {
+	padding-top: 30px;
+	display: flex;
+	flex-direction: column;
+	grid-area: linker;
+	align-items: center;
+	justify-items: center;
+	width: 100%;
+}
+
+#responsiveLink nav a {
+	color: black;
+	border: 1px solid black;
+	padding: 10px 30% 10px 30%;
+	margin-top: 10px;
+	font-size: 18px;
+	width: 100%;
+	text-align: center;
+	
+}
+
+#responsiveLink nav a:hover {
+	color: white;
+	border: 1px solid white;
+	background-color: lightgray;
+}
+
+#gitKnapp {
+	padding-top: 50px;
+	bottom: 10;
+}
+
+#gitKnapp a{
+	color: black;
+	border: 1px solid black;
+	padding: 10px 15% 10px 15%;
+	font-size: 18px;
+	text-align: center;
+}
