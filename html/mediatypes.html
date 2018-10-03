@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Media typer</title>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" type="text/css" media="screen" href="artikkelStil.css" />
+		<link rel="stylesheet" type="text/css" media="print" href="print.css" />
+	</head>
+	
+	<body>
+		<div id="mainContainer">
+			<header id="mainHead">
+				<h1>OBLIG AREA</h1>
+				<nav id="mainNav">
+					<a href="index.html">Main site</a>
+					<a href="gitGitHub.html">Git & GitHub</a>
+					<a href="mediatypes.html">Media typer</a>
+					<a href="cssLayout.html">CSS Layouts</a>
+					<a href="minLayout.html">Min Layout</a>
+				</nav>
+			</header>
+			<main id="mainArea">
+				<section id="section">
+					<article class="artikkel">
+						<div class="divGitArtikkel">
+								<h2 class="artikkelHeader">Media typer</h2>
+								<figure id="artikkelBilde">
+									<img class="rund" src="mediatypes1.jpg" alt="Mediatyper bilde 1" />
+								</figure>
+								<p>En av de viktigste egenskapene til et CSS dokument er å spesifisere hvordan dokumentet skal se ut på forskjellige media typer, som f.eks på en skjerm, med blindeskrift, printer osv. Skal siden printes ut så kan CSS stilarket gjøre det om fra den skrifttypen som er på nettsiden, til en som ser bedre ut i en printet versjon, som f.eks Times New Roman.  CSS 2.1 og Media Queries 3 har media typer som også er beskrevet under men som i Media Queries 4 som kommer ikke vil være anbefalt å bruke, men jeg nevner de allikevel så man vet hva de er. </p>
+								<h3>Media typer som ikke er anbefalt å bruke lenger</h3>
+									<p>Braille, ment til blindeskrift. Embossed, ment til printere for blindeskrift. Handheld, ment til håndholdte enheter, ofte med liten skjerm. Projection, men for prosjektere. Tty, ment for enheter med fast plasserte knapper som f.eks terminaler, ofte med en liten skjerm og få visningsmuligheter. Tv, ment for tv.</p>
+								<h3>Mediatyper som fortsatt er anbefalt å bruke.</h3>
+									<p>Screen, ment for pc-skjermer. Speech, ment for skjermlesere. Print, ment for å gjøre om innholdet til å bli mulig å printe ut.All, som er brukbar på alle enheter.</p>
+									<p>For å benytte seg av media typene kan de legges inn på tre forskjellige måter, den første er i CSS-dokumentet ved å skrive «@media» og deretter den taggen du vil bruke, f.eks «@media speech». Metode nummer to å definere det i &lt;link&gt; elementet i &lt;head&gt;, f.eks slik «&lt;link rel="stylesheet" media="screen" href="stilark_screen.css»&gt;. Den siste metoden er å bruke @import i CSS-dokumetet på denne måten «@import «stilark_print.css» print;».</p>
+									<p>Høyst aktuelt er de fire mediatypene som vil bli anbefalt å bruke. Vi kan se litt nærmere på foredelene ved print-elementet. Skal man skrive ut en nettside så er det ikke alt som gjør seg like godt i papirform som i nettleseren. Navigasjonsbaren har ingen hensikt da denne ikke vil være klikkbar eller mulig å samhandle med, derfor vil man velge å fjerne denne i printversjonen. Valget av font på en nettside er viktig, men i papirform er det ikke alltid like lett å lese, derfor ønsker man å bruke f.eks Times New Roman, for denne fonten har det man kaller «serif», altså små streker som stikker ut av bokstaven som gjør det lettere å se linjer og derfor enklere å lese dette på ark. Det at man kan benytte seg av disse medietypene gjør at nettstedet ditt tilpasses og får et liv utenom det å bare synes i nettleseren. Man kan skrive ut en side uten at det tar med farger, design og ting som er klikkbare og ikke mulige å gjøre på ark og heller bare får ut teksten og informasjonen. </p>
+							</div>
+					</article>
+				</section>
+			</main>
+				<aside id="sidebar">
+					<section id="youtube">
+						<h2>Videokurs til HTML og CSS</h2>
+						<div class="video-container"><iframe width="450" height="315" src="https://www.youtube.com/embed/gT0Lh1eYk78?rel=0" allowfullscreen></iframe></div>
+					</section>
+					<section id="responsiveLink">
+						<nav>
+							<h2>Nysgjerrig på responsivt design? Sjekk ut linkene under</h2>
+							<a href="http://www.milli.no/content/hva-er-responsiv-design">Milli</a>
+							<a href="https://no.wikipedia.org/wiki/Responsiv_nettside">Wikipedia</a>
+							<a href="https://bonefish.no/blogg/89-9-tips-for-responsivt-design">Bonefish</a>
+							<a href="https://www.w3schools.com/html/html_responsive.asp">W3Schools</a>
+							<a href="https://responsivedesign.is/examples/">Eksempler</a>
+						</nav>
+					</section>
+					<section id="gitKnapp">
+						<h2>Hvis du vil utforske Git litt mer etter å ha lest artikkelen, trykk bare under her!</h2>
+						<a href="https://guides.github.com/introduction/git-handbook/">Git</a>
+					</section>
+					
+				</aside>
+			<footer>
+			<p>2018 - Are Gulliksen - aregulliksen@gmail.com</p>
+			</footer>
+		</div>
+	</body>
+</html>

@@ -75,8 +75,6 @@ body{
 
 /*Hoveddelen som skal fylles med artikler gjennom semesteret.*/
 #mainArea {
-	display: flex;
-	flex-direction: column;
 	grid-area: mainArt;
 	background-color: #fcfcfc;
 	border: 1px solid #222222;
@@ -87,19 +85,18 @@ body{
 
 /*Spesifikasjoner for hvordan hver enkelt artikkel skal se ut*/
 #mainArea .artikkel {
-	max-height: 250px;
+	display: flex;
+	flex-direction: column;
 	margin-left: 40px;
 	margin-bottom: 50px;
 	width: 100%;
-	display: flex;
-	flex-direction: row;
 	
 	
 }
 
 #mainArea article div {
 	padding-left: 20px;
-	heigth: auto;
+	height: auto;
 	
 }
 
@@ -109,26 +106,12 @@ body{
 }
 
 #mainArea article p {
-	max-width: 80%;
+	max-width: 90%;
 }
 
 #mainArea article a {
-	margin-top: 20px;
 	color: black;
-	text-decoration: none;
-	padding: 5px;
-	border: 1px solid black;
 }
-
-#mainArea article a:hover {
-	color: white;
-	border: 1px solid white;
-	background-color: gray;
-}
-
-
-
-
 /*Spesifikasjoner for sidebaren, som skal fylles med 3 seksjoner.*/
 #sidebar {
 	display: grid;
@@ -145,24 +128,7 @@ body{
 	margin-left: 5px;
 }
 
-
-/*Styling for footerdelen.*/
-footer {
-	grid-area: footer;
-	text-align: center;
-	color: white;
-	padding-top: 5px;
-}
-
-/*Angir hvordan artikkelbildene skal se ut.*/
-.artikkelImg {
-
-	height: 175px;
-	width: 175px;
-	border-radius: 50%;
-	border: 1px solid #cfcfcf;
-}
-
+/******SIDEBAR DELEN*******/
 #sidebar section {
 	max-width: 100%
 	
@@ -172,6 +138,7 @@ footer {
 	padding: 5px;
 	grid-area: video;
 	text-align: center;
+	max-height: 600px;
 }
 
 /* ekstra youtubestæsj for responsive iframe*/
@@ -200,6 +167,7 @@ footer {
 	justify-items: center;
 	width: 100%;
 	padding-top: 50px;
+	max-height: 600px;
 }
 
 #responsiveLink nav a {
@@ -222,8 +190,9 @@ footer {
 
 #gitKnapp {
 	padding-top: 50px;
-	bottom: 10;
-	grid-areas: button;
+	bottom: 10px;
+	grid-area: button;
+	max-height: 600px;
 }
 
 #gitKnapp a{
@@ -240,4 +209,52 @@ footer {
 	border: 1px solid white;
 	background-color: gray;
 	
+}
+
+/*Styling for footerdelen.*/
+footer {
+	grid-area: footer;
+	text-align: center;
+	color: white;
+	padding-top: 5px;
+}
+
+#divGitArtikkel {
+	grid-area: artikkel;
+	max-width: 65%;
+	height: auto;
+}
+
+
+#artikkelBilde {
+	grid-area: bilde;
+	padding-top: 30px;
+	padding-right: 20px;
+	display: flex;
+	flex-direction: column;
+}
+
+
+#mainArea section article div img {
+	max-width: 620px;
+}
+
+
+
+.rund {
+	width: 230px;
+	height: 230px;
+	border-radius: 50%;
+	border: 3px solid #cfcfcf;
+	
+	
+}
+
+.artikkelHeader {
+	font-size: 28px;
+}
+
+h3 {
+	font-size: 22px;
+	padding-top: 25px;
 }

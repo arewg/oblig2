@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Sidetittel</title>
+		<title>Oblig Area</title>
 		<meta charset="utf-8" />
-		<link rel="stylesheet" type="text/css" href="index.css" />
+		<link rel="stylesheet" type="text/css" media="screen" href="index.css" />
+		<link rel="stylesheet" type="text/css" media="print" href="print.css" />
 	</head>
 	
 	<body>
@@ -13,14 +14,15 @@
 				<nav id="mainNav">
 					<a href="index.html">Main site</a>
 					<a href="gitGitHub.html">Git & GitHub</a>
-					<a href="sidenavn.html">Media types</a>
-					<a href="sidenavn.html">CSS Layouts</a>
+					<a href="mediatypes.html">Media typer</a>
+					<a href="cssLayout.html">CSS Layouts</a>
+					<a href="minLayout.html">Min Layout</a>
 				</nav>
 			</header>
 			<main id="mainArea">
 				<section id="section">
 					<article class="artikkel">
-						<img class="artikkelImg" src="artIcontest.jpg" />
+						<img class="artikkelImg" src="forsideGit.jpg" alt="Git"/>
 						<div class="divArt">
 						<h2 class="artikkelHeader">Git & GitHub</h2>
 						<p class="artikkelTekst">Teknologiene Git har gjort tilgjengelig er nærmest uvurdelige for en som koder, om det så er alene, på flere PC-er samtidig eller sammen med en gruppe andre utviklere. I denne artikkelen vil vi se litt nærmere på Git og ett av de mange nettstedene som tilbyr en tjeneste rundt dette - GitHub.</p>
@@ -28,19 +30,27 @@
 						</div>
 					</article>
 					<article class="artikkel">
-						<img class="artikkelImg" src="artIcontest.jpg" />
+						<img class="artikkelImg" src="artIcontest.jpg" alt="Media typer"/>
 						<div class="divArt">
-						<h2 class="artikkelHeader">Media types</h2>
+						<h2 class="artikkelHeader">Media typer</h2>
 						<p class="artikkelTekst">Hva er forskjellene mellom media typer og hvordan brukes disse? Skulle du printet ut en nettside, ønsker du da å få med alle knapper? Vi ser litt nærmere på hvordan man få dette til å fungere.</p>
 						<a href="mediatypes.html">Les mer</a>
 						</div>
 					</article>
 					<article class="artikkel">
-						<img class="artikkelImg" src="artIcontest.jpg" />
+						<img class="artikkelImg" src="forsideCssLayout.jpg" alt="Layout forside"/>
 						<div class="divArt">
-						<h2 class="artikkelHeader">CSS Layouts</h2>
-						<p class="artikkelTekst">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vulputate erat et orci mollis, a dictum elit aliquam. Cras tristique auctor sodales. Integer tempus diam vulputate, maximus justo non, tempus ante. Nam lacinia, enim sit amet congue vulputate, arcu magna scelerisque purus, quis dapibus lorem.</p>
-						<a href="csslayouts.html">Les mer</a>
+						<h2 class="artikkelHeader">CSS Layout</h2>
+						<p class="artikkelTekst">Det finnes flere måter å lage CSS layout på, men den mest aktuelle er kanskje Grid - men hva er det? Og hvilke andre metoder finnes? </p>
+						<a href="cssLayout.html">Les mer</a>
+						</div>
+					</article>
+					<article class="artikkel">
+						<img class="artikkelImg" src="forsideLayout.jpg" alt="Layout forside" />
+						<div class="divArt">
+						<h2 class="artikkelHeader">Planlegging av layout</h2>
+						<p class="artikkelTekst">Her kan du se et bilde av hvordan jeg først tenkte at dette nettstedet skulle se ut.</p>
+						<a href="minLayout.html">Les mer</a>
 						</div>
 					</article>
 				</section>
@@ -48,7 +58,7 @@
 				<aside id="sidebar">
 					<section id="youtube">
 						<h2>Videokurs til HTML og CSS</h2>
-						<div class="video-container"><iframe width="450" height="315" src="https://www.youtube.com/embed/gT0Lh1eYk78?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+						<div class="video-container"><iframe width="450" height="315" src="https://www.youtube.com/embed/gT0Lh1eYk78?rel=0" allowfullscreen></iframe></div>
 					</section>
 					<section id="responsiveLink">
 						<nav>
