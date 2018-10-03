@@ -1,0 +1,47 @@
+@page {
+	size: A4;
+	margin: 40px;
+	@bottom-right{
+		content: counter(page);
+	}
+}
+
+body {
+	background-color: white;
+	font-family: Georgia, Times New Roman, Serif;
+	
+}
+
+
+
+h3 {
+	color: black;
+	text-align: justify;
+}
+
+h2 {
+	color: black;
+	text-align: justify;
+}
+
+p {
+	color: black;
+	text-align: justify;
+}
+
+a:after{
+    content:" (" attr(href) ") ";
+    font-size:0.8em;
+}
+
+img {
+	display: none;
+}
+
+#mainHead {
+	display: none;
+}
+
+#sidebar {
+	display: none;
+}
