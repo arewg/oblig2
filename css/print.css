@@ -42,3 +42,7 @@ img {
 #sidebar {
 	display: none;
 }
+
+#gitCommit {
+	display: none;
+}

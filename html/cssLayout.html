@@ -3,8 +3,8 @@
 	<head>
 		<title>Media typer</title>
 		<meta charset="utf-8" />
-		<link rel="stylesheet" type="text/css" media="screen" href="artikkelStil.css" />
-		<link rel="stylesheet" type="text/css" media="print" href="print.css" />
+		<link rel="stylesheet" type="text/css" media="screen" href="../css/artikkelStil.css" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/print.css" />
 	</head>
 	
 	<body>
@@ -26,23 +26,23 @@
 								<h2 class="artikkelHeader">CSS Layouts</h2>
 									<h3>I denne arikkelen vil du kunne lese en kort intro om CSS Float, CSS Flex og CSS Grid</h3>
 										<p>Float går ut på å få elementer til å flyte i forhold til hverandre. Man angir en eksakt posisjon for elementet, men ber det heller ligge til høyre eller venstre for andre elementer, eller å ligge under med clear-verdien. Det finnes fire verdier man kan bruke i sammenheng med float, og disse er left, right, none og inherit. None er standarden for float mens inherit betyr at den vil anta sin posisjon i forhold til foreldre elementet. Mens float mest blir brukt for å få tekst til å legge seg rundt et bilde så kan man bygge fulle layouter med det. </p>
-										<img class="cssLayout" src="floatEks.png" alt="Float eksempel" />
+										<img class="../bilder/cssLayout" src="floatEks.png" alt="Float eksempel" />
 										<p>Som jeg nevnte over kan man også bruke verdien clear. Denne vil føre elementet under float elementet. Clear har også fire verdier som kan brukes. Both, left, right og none. None er her igjen standarden, mens both gjør at ingen elementer kan floate til høyre eller venstre for elementet.</p>
-										<img src="clearEks.png" alt="Clear eksempel" />
+										<img src="../bilder/clearEks.png" alt="Clear eksempel" />
 										<p>For å lese mer om float kan man sjekke ut css-tricks, mozilla developer eller w3schools.</p>
 										<a href="https://css-tricks.com/all-about-floats/">CSS-tricks</a>
 										<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/float">Mozilla Developer</a>
 									<h3>Flexible Box Module</h3>
 										<p>The Flexible Box Module, - flexbox -  krever mer kunnskaper om css, men til gjengjeld er den enkelre til å få til å adlyde det du ønsker at den skal gjøre – gitt at du kan litt mer css enn ved bruk av float. Her er det vanlig å bruke en wrapper som ligger rundt alt du skal jobbe med på nettsiden, så det blir enklere å skalere. For flexbox håndterer skalering av nettsiden bedre enn hva float gjør. For å definere flexbox i css-dokumentet bruker man display: flex. Med flexbox jobber man langs to akser hoved-aksen og kryss-aksen. Hovedaksen defineres av hvilken flex-direction man angir. Her er det fire muligheter. Row (1), row-reverse (2), column (3) og column-reverse(4).</p>
-										<img class="cssLayout" src="flexboxEks.png" alt="Flexbox eksempel"/>
+										<img class="cssLayout" src="../bilder/flexboxEks.png" alt="Flexbox eksempel"/>
 										<p>Gitt at man benytter seg av denne wrapperen rundt så kan man enklere stilsette ved bruk av flexbox. Man kan få de til å ligge rett etter hverandre, sentrert eller med mellomrom mellom hverandre. Man kan også gi hvert av elementene sin egen bredde og høyde uten at det påvirker de andre boksene. For å lære mer om flexbox burde man sjekke ut css-tricks.</p>
 										<a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">CSS-tricks</a>
 									<h3>Grid</h3>
 										<p>Mens flexbox strekker seg i en retning kan grid strekke seg både vertikalt og horisontalt, eller det vi vil kalle for rows og columns. For å angi grid bruker man display:grid på foreldre elementet, deretter vil alle barn av dette elementet automatisk bli grid elementer. Deretter kan du dele opp dette elementet nøyaktig som du vil i forskjellige måleenheter. Her kan man bruke noe som heter fr, som står for fractional unit. Denne ser hvor mye plass som er ledig og deler deretter opp den ledige plassen likt på de antall fr man ønsker. Har man fire stykker, vil disse få 25% hver av den ledige plassen. Noter deg at 25% 25% 25% 25% og 1fr 1fr 1fr 1fr ikke er det.</p>
 										<p>Under har jeg hentet ut skjermbilde fra Wes Bos sin videotutorial hvor du kan se at man kan be elementer strekke seg både langs en row, og ned en column.</p>
-										<img class="cssLayout" src="gridEks1.png" alt="Grid eksempel 1" />
+										<img class="cssLayout" src="../bilder/gridEks1.png" alt="Grid eksempel 1" />
 										<p>For å plassere grid elementene så kan man sette navn på delene man har delt opp, og deretter be elementet ditt om å legge seg der hvor den finner dette navnet. Dette gjør det enkelt å plassere grid elementer rundt, og lage forskjellige layouter ved bruk av dette. Dette kalles for grid-template-areas.</p>
-										<img src="gridEks2.png" alt="Grid eksempel 2" />
+										<img class="cssLayout" src="../bilder/gridEks2.png" alt="Grid eksempel 2" />
 										<p>For å lære mer om grid anbefaler jeg å sjekke ut Wes Bos sin videotutorial.</p>
 										<a href="https://cssgrid.io/">Wes Bos Videotutorial</a>
 							</div>
